@@ -3,36 +3,30 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .contact-contayner{
-    highet: 100vh;
     display: flex;
-    align-item: center;
+    align-items: center;
     justify-content: space-evenly;
 }
-
 .content-left{
     display: flex;
     flex-direction: coloumn;
-    align-item: start;
+    align-items: start;
     gap: 20px;
 }
-
 .contact-input {
-    width: 20em;
+    width: min(100%, 20em);
     height: 50px;
     padding-left: 25px;
     font-weight: 500;
     border-radius: 50px;
     
 }
-
 .contact-left textarea{
 height: 140px;
 padding-top: 15px;
 border-radius: 20px;
 }
-
 .contact-left button{
 display: flex;
 align-items: center;
@@ -41,5 +35,4 @@ font-size: 16px;
 gap: 10px;
 border-radius: 50px;
 cursor: pointer;
-
 }

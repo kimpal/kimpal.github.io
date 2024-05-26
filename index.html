@@ -111,8 +111,6 @@
                         Year: 2016 - 2019
                     </li>
                 </ul>
-                <p></p>
-                <p></p>
             </section>
         </article>
         <hr>
@@ -257,9 +255,9 @@
                 <p class="mb-2">Thank you for visiting my web page.</p>
             </div>
             <br>
-            <div>    
+            <div id="contact">    
                 <h2 class="text-uppercase fw-bold">Contact</h2>
-                <div class=contact-contayner >
+                <div class=contact-contayner>
                     <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
                         <input type="hidden" name="access_key" value="2de38b42-cca7-48c7-80b7-01aa77586982">
                         <label for="fname">First Name</label><br>
@@ -283,7 +281,7 @@
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color:black">
-            &copy; 2024:
+            &copy; 2023 - <span id="spanYear"></span>
             <a class="text-white" href="/" alt="link to home pag">Kim Kristoffer Pal</a>
         </div>
         <!-- Copyright -->
@@ -301,6 +299,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+        <script>
+            $('#spanYear').html(new Date().getFullYear());
+          </script>
 </body>
 
 </html>
